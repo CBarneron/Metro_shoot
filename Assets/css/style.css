@@ -1,0 +1,10 @@
+/* couleurs primaire */
+.font-metre
+{
+ color:#111441;
+ font-family: 'BigCaslonFB-Regular';
+ src:"Assets\font\BigCaslonFB-Regular.ttf";
+}
+.bg-metre{
+    background-color: #f7f7f7;
+}
