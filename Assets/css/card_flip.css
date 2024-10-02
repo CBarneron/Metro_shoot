@@ -1,0 +1,59 @@
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flip-card-back {
+    background-color: #333;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card-img {
+    width: 150PX;
+    height: auto;
+    max-height: 200px; /* Limite la hauteur maximale à 200px */
+    object-fit: cover; /* Assure que l'image couvre l'espace sans déformation */
+  }*
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les cartes horizontalement */
+    padding: 20px; /* Ajoute un espacement autour des cartes */
+  }
+  
+  .flip-card {
+    width: 80vw; /* Largeur s'ajuste à 80% de la fenêtre */
+    max-width: 200px; /* Limite la largeur à 200px */
+    height: 200px; /* Définit une hauteur fixe de 200px */
+    margin: 10px; /* Espacement entre les cartes */
+    perspective: 1000px;
+    }
+  
