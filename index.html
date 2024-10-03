@@ -49,11 +49,11 @@
          <a class="btn btn-outline-secondary" href="#Form_contacter">Nous Contacter</a>
         </div>
 </section>
-<section>
-  <h1>Nos Collections</h1>
+<section class="">
+  <h1 class="">Nos Collections</h1>
   <div>
     <!-- bouton pour cards -->
-    <div class="row">
+    <div class="row ">
       <div class="btn-group btn-group-lg">
         <button type="button" class="btn btn-primary" id="col_sex">SEX</button>
         <button type="button" class="btn btn-primary" id="col_halloween">Halloween</button>
@@ -62,8 +62,9 @@
     </div></div>
   
     <div>
-  <!-- card -->
-  <div class="row">
+  <!-- card  collection sex-->
+  <div class="row bg-metre-bleu" id="coll_sex">
+    
     <div class="product-list">
       <div class="flip-card">
       <div class="flip-card-inner">
@@ -73,7 +74,7 @@
         <div class="flip-card-back">
           <h1>Bondage</h1>
           <p>Collection : SEX</p>
-          <p>Liens vers boutique</p>
+          <p><a href="#">Liens vers boutique</a></p>
         </div>
       </div>
     </div>
@@ -86,7 +87,7 @@
         <div class="flip-card-back">
           <h1>Blow</h1>
           <p>Collection : SEX</p>
-          <p>Liens vers boutique</p>
+          <p><a href="#">Liens vers boutique</a></p>
         </div>
       </div>
     </div>
@@ -99,7 +100,7 @@
         <div class="flip-card-back">
           <h1>Deep</h1>
           <p>Collection : SEX</p>
-          <p>Liens vers boutique</p>
+          <p><a href="#">Liens vers boutique</a></p>
         </div>
       </div>
     </div>
@@ -112,22 +113,95 @@
         <div class="flip-card-back">
           <h1>Orgasme</h1>
           <p>Collection : SEX</p>
-          <p>Liens vers boutique</p>
+          <p><a href="#">Liens vers boutique</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front card-img">
+          <img src="Assets/img/PROJET_SEX_cocktail_pornstar.jpg" class="card-img" alt="Bouteille cokctail pornstar">
+        </div>
+        <div class="flip-card-back">
+          <h1>Pornstar</h1>
+          <p>Collection : SEX</p>
+          <p><a href="#">Liens vers boutique</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+   <!-- Fin de liste -->
+  </div>
+  <!-- Debut  liste -->
+  <div class="row bg-metre-hall" id="coll_sex">
+    <div class="product-list">
+      <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front card-img">
+          <img src="Assets/img/PROJET_SEX_cocktail_bondage.jpg"class="card-img" alt="Bouteille cokctail bondage" >
+        </div>
+        <div class="flip-card-back">
+          <h1>Bondage</h1>
+          <p>Collection : SEX</p>
+          <p><a href="#">Liens vers boutique</a></p>
         </div>
       </div>
     </div>
 
     <div class="flip-card">
       <div class="flip-card-inner">
-        <div class="flip-card-front ">
+        <div class="flip-card-front card-img">
+          <img src="Assets/img/PROJET_SEX_cocktail_blow.jpg" class="card-img"alt="outeille cokctail blow">
+        </div>
+        <div class="flip-card-back">
+          <h1>Blow</h1>
+          <p>Collection : SEX</p>
+          <p><a href="#">Liens vers boutique</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front card-img">
+          <img src="Assets/img/PROJET_SEX_cocktail_deep.jpg" class="card-img"alt="outeille cokctail deep">
+        </div>
+        <div class="flip-card-back">
+          <h1>Deep</h1>
+          <p>Collection : SEX</p>
+          <p><a href="#">Liens vers boutique</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front card-img">
+          <img src="Assets/img/PROJET_SEX_cocktail_orgasme.jpg" class="card-img"lt="Bouteille cokctail orgasme">
+        </div>
+        <div class="flip-card-back">
+          <h1>Orgasme</h1>
+          <p>Collection : SEX</p>
+          <p><a href="#">Liens vers boutique</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front card-img">
           <img src="Assets/img/PROJET_SEX_cocktail_pornstar.jpg" class="card-img" alt="Bouteille cokctail pornstar">
         </div>
         <div class="flip-card-back">
           <h1>Pornstar</h1>
           <p>Collection : SEX</p>
-          <p>Liens vers boutique</p>
+          <p><a href="#">Liens vers boutique</a></p>
         </div>
       </div>
+    </div>
+
+
     </div>
     <!-- card par bouteille photo + description (+liens stripes? ) -->
 
@@ -135,6 +209,26 @@
 </div>
 
 </section>
+<!-- <section class="py-5" style="background-color: #111441;">
+  <div class="container">
+    <h2 class="text-white">Lieux Partenaires</h2>
+    <p class="text-light">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  
+    <div class="row">
+      <div class="col-4">
+        <img src="image1.png" class="img-fluid" alt="Partner 1 Logo">
+      </div>
+      <div class="col-4">
+        <img src="image2.png" class="img-fluid" alt="Partner 2 Logo">
+      </div>
+      <div class="col-4">
+        <img src="image3.png" class="img-fluid" alt="Partner 3 Logo">
+      </div>
+    </div>
+  </div>
+</section> -->
 
 <section class="container contact" id="Form_contacter">
   <div class="row align-items-center">
