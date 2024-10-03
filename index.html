@@ -45,8 +45,8 @@
         <div class="row">
           <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
         </div>
-        <div class="btn center">
-          Nous Contacter
+        <div class="center ">
+         <a class="btn btn-outline-secondary" href="#Form_contacter">Nous Contacter</a>
         </div>
 </section>
 <section>
@@ -136,56 +136,68 @@
 
 </section>
 
-<section class="row">
-  <div class="col-6"><h1>Nous Contacter</h1>
-  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</span>
-<br>
-  <span> 06 81 20 47 00</span>
-  <br>
-  <span>metres.shots@gmail.com</span>
-  </div>
-  <div class="col-6 bg-white">
-    <form action="/ma-page-de-traitement" method="post">
-    <ul>
-      <li>
-        <label for="name">Prenom :</label>
-        <input type="text" id="firstname" name="user_firstname" />
-      </li>
-      <li>
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="user_name" />
-      </li>
-      <li>
-        <label for="mail">E-mail :</label>
-        <input type="email" id="mail" name="user_email" />
-      </li>
-      <li>
-        <label for="msg">Telephone :</label>
-        <input type="number" id="phone" name="user_phone" />
-      </li>
-      <li>
-          <label for="msg">Sujet :</label>
-          <select name="suejt" id="Sujet">
+<section class="container contact" id="Form_contacter">
+  <div class="row align-items-center">
+    <div class="col-lg-5 col-md-12">
+      <h1>Nous Contacter</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p><strong>06 81 20 47 00</strong></p>
+      <p><strong>metres.shots@gmail.com</strong></p>
+    </div>
+
+    <div class="col-md-1 d-none d-lg-block">
+      <span class="vertical-line"></span>
+    </div>
+
+    <div class="col-lg-6 col-md-12">
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-sm-6 mb-3">
+            <label for="firstName">Prénom</label>
+            <input type="text" class="form-control" id="firstName" required>
+            <div class="invalid-feedback">Renseigner un prénom valide.</div>
+          </div>
+          <div class="col-sm-6 mb-3">
+            <label for="lastName">Nom de famille</label>
+            <input type="text" class="form-control" id="lastName" required>
+            <div class="invalid-feedback">Renseigner un nom valide.</div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone">Téléphone</label>
+          <input type="number" class="form-control" id="phone" required>
+          <div class="invalid-feedback">Renseigner un numéro valide.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">Renseigner un email valide.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="subject">Sujet</label>
+          <select class="form-select" id="subject" required>
+            <option value="ask">Demande d'information</option>
             <option value="coll_commer">Collaboration Commerciale</option>
             <option value="partner">Partenariat</option>
-            <option value="ask">Demande d'information</option>
             <option value="other">Autre</option>
           </select>
-            
-      </li>
-      <li>
-        <label for="msg">Message :</label>
-        <textarea id="msg" name="user_message"></textarea>
-      </li>
-  
-      …
-    </ul>
-  </form></div>
-<form action="">
+        </div>
 
+        <div class="mb-3">
+          <label for="comment">Commentaire</label>
+          <textarea class="form-control" id="comment" rows="3" placeholder="Commentaire"></textarea>
+          <div class="invalid-feedback">Renseigner un commentaire valide.</div>
+        </div>
 
-</form>
+        <button class="btn btn-primary btn-lg w-100" type="submit">Envoyer</button>
+      </form>
+    </div>
+  </div>
 </section>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 <footer>
