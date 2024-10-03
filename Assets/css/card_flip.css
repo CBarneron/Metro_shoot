@@ -57,3 +57,16 @@
     perspective: 1000px;
     }
   
+    @media (max-width: 768px) {
+      .flip-card {
+        width: 200px; /* Smaller width for tablets */
+        height: 300px; /* Smaller height for tablets */
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .flip-card {
+        width: 150px; /* Even smaller width for mobile phones */
+        height: 250px; /* Even smaller height for mobile phones */
+      }
+    }
